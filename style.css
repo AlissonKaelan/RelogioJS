@@ -1,0 +1,34 @@
+*{
+    background-color: #0c0c08;
+    color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center; /*Alinha na horizontal*/
+    align-items: center; /*Alinha na vertical */
+    min-height: 100vh;
+    flex-direction: column; /*Formato coluna um em baixo do outro*/
+    gap: 20px;
+}
+
+
+.relogio{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap; /*De acordo com o tamanho da tela ele vai jogando os txt para baixo
+
+}
+
+.relogio span{ /*Tamanho dos numeros do relogio*/
+    font-size: 150px;
+
+}
+
+.relogio span:not(:last-child):after{ /*Add os dos ':' afeter=antes dos span*/
+    /*not(:lost-chield) para nao add o ':' no ultimo filho*/
+    content: ':';
+    color: rgb(202, 161, 99);
+}
